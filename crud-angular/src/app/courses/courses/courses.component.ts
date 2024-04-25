@@ -14,7 +14,7 @@ import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/err
 })
 export class CoursesComponent implements OnInit {
   courses$: Observable<Course[]>; //Convention - Variable name with the final letter being "$" to indicate that it is an Observable variable
-  displayedColumns: string[] = ['name', 'category'];
+  displayedColumns: string[] = ['name', 'category', 'actions'];
 
   constructor(
     private CoursesService: CoursesService,
